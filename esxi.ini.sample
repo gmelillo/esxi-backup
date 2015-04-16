@@ -1,0 +1,17 @@
+[esxi]
+hostip=192.168.1.1
+hostdns=esxi.example.intra
+username=esxuser
+password=esxpassword
+
+[webdav]
+enabled=True
+host=webdav.example.tld
+proto=https
+username=dav_username
+password=dav_password
+savepath=/remote.php/webdav
+
+[local]
+savepath=/loacal/path/to/store/configuation
+dateformat=%d%m%Y
