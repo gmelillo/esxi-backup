@@ -36,7 +36,7 @@ for l in stdout:
             host=config['esxi']['hostip'],
             position=m.group(1)
         )
-        logging.info("Downloading {}".format(download))
+        logging.info("Downloading {0}".format(download))
         local_file = '{localpath}/backup-{host}-{date}.tgz'.format(
             host=config['esxi']['hostdns'],
             date=strftime(config['local']['dateformat']),
@@ -53,7 +53,7 @@ for l in stdout:
                 protocol=config['webdav']['proto'],
                 verify_ssl=False
             )
-            comediaoc.upload(local_file, '{}/backup-{}-{}.tgz'.format(
+            comediaoc.upload(local_file, '{0}/backup-{1}-{2}.tgz'.format(
                 config['webdav']['savepath'],
                 config['esxi']['hostdns'],
                 strftime(config['local']['dateformat'])
