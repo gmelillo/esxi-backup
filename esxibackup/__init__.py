@@ -6,12 +6,20 @@ from easywebdav import connect as webdav_connect
 import logging
 from config import ConfigurationINI, get_config_path
 from socket import error as SocketError
+from os.path import isfile
 
 
 def main():
     logging.basicConfig(level=logging.INFO)
 
-    config = ConfigurationINI(get_config_path(__file__, '/esxi.ini'))
+    if isfile(get_config_path(__file__, '/esxi.ini')):
+        config = ConfigurationINI(get_config_path(__file__, '/esxi.ini'))
+    elif isfile('/etc/esxi.ini'):
+        config = ConfigurationINI('/etc/esxi.ini')
+    else:
+        logging.critical('/etc/esxi.ini missing.')
+        exit(0)
+
     logging.debug('Configuration file used : {conf}'.format(conf=get_config_path(__file__, '/esxi.ini')))
 
     try:
