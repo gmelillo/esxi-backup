@@ -1,6 +1,8 @@
 esxi/
 .idea/
 esxi.ini
+deb_dist/
+data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
