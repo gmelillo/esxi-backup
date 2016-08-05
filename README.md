@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gmelillo/esxi-backup.svg?branch=master)](https://travis-ci.org/gmelillo/esxi-backup)
+
 # esxi-backup
 Export vmware configuration and store it on webdav server
 
