@@ -65,6 +65,8 @@ def main():
                     config['esxi']['hostdns'],
                     strftime(config['local']['dateformat'])
                 ))
+                logging.info('Cleaning old configurations')
+                files = [file for file in comediaoc.ls(config['webdav']['savepath']) if file.contenttype == 'application/x-compressed']
 
     ssh.close()
 
