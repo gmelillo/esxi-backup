@@ -7,9 +7,13 @@ except ImportError:
 from time import strftime
 from easywebdav import connect as webdav_connect
 import logging
-from config import ConfigurationINI, get_config_path
+from sys import version_info
 from socket import error as SocketError
 from os.path import isfile
+if version_info >= (3, 0):
+    from .config import ConfigurationINI, get_config_path
+else:
+    from config import ConfigurationINI, get_config_path
 
 
 def main():
