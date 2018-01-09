@@ -1,6 +1,9 @@
 from paramiko import SSHClient, AutoAddPolicy
 from re import search
-from urllib import urlretrieve
+try:
+    from urllib import urlretrieve
+except ImportError:
+    from urllib.request import urlretrieve
 from time import strftime
 from easywebdav import connect as webdav_connect
 import logging

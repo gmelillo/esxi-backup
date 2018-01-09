@@ -1,6 +1,8 @@
 __author__ = 'Gabriel Melillo <gabriel@melillo.me>'
-
-from ConfigParser import ConfigParser
+try:
+    from ConfigParser import ConfigParser
+except ImportError:
+    from configparser import ConfigParser
 from os import path
 
 
