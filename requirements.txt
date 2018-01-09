@@ -1,4 +1,4 @@
-argparse==1.2.1
+argparse==1.4.0
 easywebdav==1.2.0
 ecdsa==0.13
 paramiko==1.15.2
