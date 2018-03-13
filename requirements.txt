@@ -1,7 +1,7 @@
 argparse==1.4.0
 easywebdav==1.2.0
 ecdsa==0.13
-paramiko==2.4.0
+paramiko==2.4.1
 pycrypto==2.6.1
 requests==2.18.4
 wsgiref==0.1.2
