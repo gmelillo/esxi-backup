@@ -11,6 +11,9 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 2.7',
 ]
 
+with open("requirements.txt", "r") as f:
+    REQUIREMENTS = f.read().split("\n")
+
 setup(
     name='ESXi-Backup',
     version='0.1.2',
@@ -20,15 +23,7 @@ setup(
     maintainer_email="gabriel@melillo.me",
     description="Export configuration from ESXi 5.X host and upload it to a central repository",
     url="https://github.com/gmelillo/esxi-backup",
-    install_requires=[
-        "argparse==1.2.1",
-        "easywebdav==1.2.0",
-        "ecdsa==0.13",
-        "paramiko==1.15.2",
-        "pycrypto==2.6.1",
-        "requests==2.6.0",
-        "wsgiref==0.1.2"
-    ],
+    install_requires=REQUIREMENTS,
     classifiers=CLASSIFIERS,
     platforms=['OS Independent'],
     data_files=[
