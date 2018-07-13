@@ -1,5 +1,8 @@
 from distutils.core import setup
-from pip.req import parse_requirements
+try: # for pip >= 10
+    from pip._internal.req import parse_requirements
+except ImportError: # for pip <= 9.0.3
+    from pip.req import parse_requirements
 from setuptools.command.develop import develop
 
 CLASSIFIERS = [
@@ -24,8 +27,8 @@ setup(
         "argparse==1.2.1",
         "easywebdav==1.2.0",
         "ecdsa==0.13",
-        "paramiko==1.15.2",
-        "pycrypto==2.6.1",
+        "paramiko==2.4.1",
+        "pycryptodome==3.6.4",
         "requests==2.6.0",
         "wsgiref==0.1.2"
     ],
