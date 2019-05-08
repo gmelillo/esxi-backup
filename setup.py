@@ -23,12 +23,12 @@ setup(
     description="Export configuration from ESXi 5.X host and upload it to a central repository",
     url="https://github.com/gmelillo/esxi-backup",
     install_requires=[
-        "argparse==1.2.1",
+        "argparse==1.4.0",
         "easywebdav==1.2.0",
-        "ecdsa==0.13",
-        "paramiko==2.4.1",
-        "pycryptodome==3.6.4",
-        "requests==2.6.0",
+        "ecdsa==0.13.2",
+        "paramiko==2.4.2",
+        "pycryptodome==3.6.6",
+        "requests==2.21.0",
         "wsgiref==0.1.2"
     ],
     classifiers=CLASSIFIERS,
