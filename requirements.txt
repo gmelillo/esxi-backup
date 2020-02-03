@@ -4,4 +4,4 @@ requests==2.22.0
 ecdsa==0.15
 paramiko==2.7.1
 wsgiref==0.1.2
-pycryptodome==3.9.4
+pycryptodome==3.9.6
