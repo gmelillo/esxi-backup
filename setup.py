@@ -25,7 +25,7 @@ setup(
     install_requires=[
         "argparse==1.4.0",
         "easywebdav==1.2.0",
-        "ecdsa==0.16.0",
+        "ecdsa==0.16.1",
         "paramiko==2.7.2",
         "pycryptodome==3.9.8",
         "requests==2.24.0",
