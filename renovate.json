@@ -10,6 +10,12 @@
     "renovate",
     "dependencies"
   ],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
   "prHourlyLimit": 0,
   "masterIssue": true,
   "masterIssueAutoclose": true
