@@ -28,7 +28,7 @@ setup(
         "ecdsa==0.17.0",
         "paramiko==2.10.3",
         "pycryptodome==3.14.1",
-        "requests==2.26.0",
+        "requests==2.27.1",
         "wsgiref==0.1.2"
     ],
     classifiers=CLASSIFIERS,
