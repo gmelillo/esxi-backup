@@ -1,6 +1,6 @@
 argparse==1.4.0
 easywebdav==1.2.0
-requests==2.28.0
+requests==2.28.1
 ecdsa==0.17.0
 paramiko==2.11.0
 wsgiref==0.1.2
