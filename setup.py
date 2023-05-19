@@ -27,7 +27,7 @@ setup(
         "easywebdav==1.2.0",
         "ecdsa==0.18.0",
         "paramiko==2.12.0",
-        "pycryptodome==3.17",
+        "pycryptodome==3.18.0",
         "requests==2.30.0",
         "wsgiref==0.1.2"
     ],
